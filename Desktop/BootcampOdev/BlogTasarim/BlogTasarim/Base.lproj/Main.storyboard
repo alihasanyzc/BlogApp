@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="BlogTasarim" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profile" translatesAutoresizingMaskIntoConstraints="NO" id="B76-78-b43">
+                                <rect key="frame" x="96.666666666666686" y="105" width="200" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="Nlu-MJ-38x"/>
+                                    <constraint firstAttribute="width" constant="200" id="uhW-KV-N7I"/>
+                                </constraints>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="YX8-8E-T16">
+                                <rect key="frame" x="16.666666666666657" y="343" width="360" height="380"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="380" id="O5b-Ev-0lv"/>
+                                    <constraint firstAttribute="width" constant="360" id="hKQ-33-B3i"/>
+                                </constraints>
+                                <mutableString key="text">Hello, I am Ali Hasan Yazıcı. I was born in Kadıköy and I live in Istanbul. I started my education life at Sarkuysan Anatolian High School and graduated from there with the first rank. I am currently a 3rd year student of Computer Engineering at Pamukkale University.
+
+I am actively developing iOS mobile applications and I am constantly improving myself in this field. I know C, Java and Swift as programming languages. I can also use Express.js framework for backend development.
+
+As for my language skills, I speak English at B2 level and German at A2 level.
+
+In my free time, I enjoy playing soccer and court tennis. I also continue to improve myself by doing research on technology and computer science.
+</mutableString>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="🐱 github:alihasanyzc" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wR3-jQ-smS">
+                                <rect key="frame" x="0.0" y="731" width="351" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="351" id="0rB-je-abe"/>
+                                    <constraint firstAttribute="height" constant="21" id="uct-Xa-SVP"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FVT-eL-dIV">
+                                <rect key="frame" x="329" y="59" width="49" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </switch>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="B76-78-b43" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="7Vc-TP-M1s"/>
+                            <constraint firstItem="YX8-8E-T16" firstAttribute="top" secondItem="B76-78-b43" secondAttribute="bottom" constant="38" id="H4F-YX-W7x"/>
+                            <constraint firstItem="wR3-jQ-smS" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="YNv-E0-vbh"/>
+                            <constraint firstItem="B76-78-b43" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="46" id="pQ8-9z-5DM"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="wR3-jQ-smS" secondAttribute="bottom" constant="66" id="pvM-Dq-bJy"/>
+                            <constraint firstItem="YX8-8E-T16" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ru4-X8-L9E"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="blogYazim" destination="YX8-8E-T16" id="Gso-hy-7y5"/>
+                        <outlet property="githubYazi" destination="wR3-jQ-smS" id="5ZO-LQ-2Ii"/>
+                        <outlet property="profile" destination="B76-78-b43" id="TpC-nZ-CGp"/>
+                        <outlet property="switchButon" destination="FVT-eL-dIV" id="nPV-1Y-nHx"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2.2900763358778624" y="3.5211267605633805"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="profile" width="1333.3333740234375" height="2000"/>
+        <systemColor name="labelColor">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
